@@ -39,7 +39,7 @@ const carsModel = mongoose.model("cars", carsSchema);
 //   ]);
 // });
 
-carsModel.findById({ _id: 1 }).then((response) => console.log(response));
+// carsModel.findById({ _id: 1 }).then((response) => console.log(response));
 
 // carsModel
 //   .updateOne(
@@ -60,3 +60,7 @@ carsModel.findById({ _id: 1 }).then((response) => console.log(response));
 //   [{ _id: 1, brand: "Aston Martin", model: "DB9", year: 2010 },
 //   { _id: 2, brand: "Range Rover", model: "Discovery Sport", year: 2017 },]
 // );
+
+
+// carsModel.find({year:{$gt:2015} }).then((response) => console.log(response));
+// carsModel.find({ model : /o/ }).then((response) => console.log(response));
